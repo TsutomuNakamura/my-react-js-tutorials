@@ -13,7 +13,6 @@ module.exports = {
       use: [{
         loader: 'babel-loader',
         options: {
-          plugins: ['react-html-attrs'],
           presets: ['react', 'env', 'stage-2']
         }
       }]
