@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "Tutorial of React",
   "main": "webpack.config.js",
-  "dependencies": {},
-  "devDependencies": {
+  "dependencies": {
     "@babel/core": "^7.0.0",
     "@babel/preset-env": "^7.0.0",
     "@babel/preset-react": "^7.0.0",
@@ -15,6 +14,7 @@
     "webpack-cli": "^3.1.0",
     "webpack-dev-server": "^3.1.8"
   },
+  "devDependencies": {},
   "scripts": {
     "start": "webpack-dev-server --content-base src --mode development --inline",
     "test": "echo \"Error: no test specified\" && exit 1"
