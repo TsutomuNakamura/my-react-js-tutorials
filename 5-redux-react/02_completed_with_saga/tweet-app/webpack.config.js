@@ -13,8 +13,11 @@ module.exports = {
       use: [{
         loader: 'babel-loader',
         options: {
-          plugins: ['react-html-attrs', 'transform-decorators-legacy'],
-          presets: ['react', 'env', 'stage-2']
+          plugins: [
+            'react-html-attrs',
+            [require('@babel/plugin-proposal-decorators'), {legacy: true}]
+          ],
+          presets: ['@babel/preset-react', '@babel/preset-env']
         }
       }]
     }]
