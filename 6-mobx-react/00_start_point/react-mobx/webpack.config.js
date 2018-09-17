@@ -15,7 +15,8 @@ module.exports = {
         options: {
           plugins: [
             'react-html-attrs',
-            [require('@babel/plugin-proposal-decorators'), {legacy: true}]
+            ['@babel/plugin-proposal-decorators', {legacy: true}],
+            ["@babel/plugin-proposal-class-properties", { loose: true }]
           ],
           presets: ['@babel/preset-react', '@babel/preset-env']
         }
