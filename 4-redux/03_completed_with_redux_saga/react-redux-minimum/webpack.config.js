@@ -14,7 +14,7 @@ module.exports = {
         loader: 'babel-loader',
         options: {
           plugins: ['react-html-attrs'],
-          presets: ['react', 'env', 'stage-2']
+          presets: ['@babel/preset-react', '@babel/preset-env']
         }
       }]
     }]
