@@ -13,7 +13,6 @@ main() {
     for target in "${directories[@]}"; do
         echo "@ Updating $target @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@"
         pushd "$target"
-        npm-check-update
         npm-check-updates -u
         rm -f package-lock.json
         popd
