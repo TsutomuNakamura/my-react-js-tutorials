@@ -5,6 +5,7 @@ var path    = require('path');
 module.exports = {
   context: path.join(__dirname, "src"),
   entry: "./js/client.js",
+  devtool: debug ? "inline-sourcemap" : false,
   module: {
     rules: [{
       test: /\.jsx?$/,
