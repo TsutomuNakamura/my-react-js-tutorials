@@ -2,7 +2,7 @@
   "name": "react-mobx",
   "version": "1.0.0",
   "description": "",
-  "main": "webpack.conf.js",
+  "main": "webpack.config.js",
   "scripts": {
     "start": "webpack-dev-server --content-base src --mode development --inline",
     "test": "echo \"Error: no test specified\" && exit 1"
