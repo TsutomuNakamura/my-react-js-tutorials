@@ -15,7 +15,7 @@
     "@babel/plugin-proposal-decorators": "^7.10.5",
     "@babel/preset-env": "^7.11.5",
     "@babel/preset-react": "^7.10.4",
-    "axios": "^0.20.0",
+    "axios": "^0.21.1",
     "babel-loader": "^8.1.0",
     "babel-plugin-react-html-attrs": "^3.0.5",
     "react": "^16.13.1",
