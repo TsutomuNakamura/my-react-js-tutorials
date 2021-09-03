@@ -1,4 +1,5 @@
 import { EventEmitter } from "events"; //1.EventEmitterをインポートし
+import dispatcher from "../dispatcher"; 
 
 class TodoStore extends EventEmitter { //2.それを継承したTodoStoreクラスを作成
     constructor() {
@@ -32,9 +33,18 @@ class TodoStore extends EventEmitter { //2.それを継承したTodoStoreクラ�
     getAll() {
         return this.todos;
     }
+
+    handleActions(action) {
+        switch(action.type) {
+            case "CREATE_TODO": {
+                this.createTodo(action.text);
+            }
+        }
+    }
 }
 
 const todoStore = new TodoStore; //3.そのTodoStoreクラスをnewする(インスタンス化)
+dispatcher.register(todoStore.handleActions.bind(todoStore));
 
-window.todoStore = todoStore;
+window.dispatcher = dispatcher;
 export default todoStore; //そのインスタンスを外部へエクスポートする
